@@ -1,0 +1,173 @@
+.bg-purple {
+
+    background: rgb(128,0,128);
+
+}
+
+.form-control {
+    width: 70%;
+    color: black;
+}
+
+.grid-container {
+    background: white;
+    margin-left: 25%;
+    margin-top: 1%;
+    border: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    height: 60%;
+    justify-items: center;
+    border-radius: 25px;
+    border: 2px solid rgb(192,192,192);
+}
+
+.del-container {
+    background: white;
+    margin-left: 25%;
+    margin-top: 3%;
+    border: 10%;
+    display: grid;
+    width: 50%;
+    height: 60%;
+    justify-items: center;
+    border-radius: 25px;
+    border: 2px solid rgb(192,192,192);
+}
+
+.retauthbks-container {
+    background: white;
+    margin-left: 25%;
+    margin-top: 3%;
+    border: 10%;
+    display: grid;
+    width: 50%;
+    height: 60%;
+    justify-items: center;
+    border-radius: 25px;
+    border: 2px solid rgb(192,192,192);
+}
+
+.retbkinfo-container {
+    background: white;
+    margin-left: 25%;
+    margin-top: 3%;
+    border: 10%;
+    display: grid;
+    width: 50%;
+    height: 60%;
+    justify-items: center;
+    border-radius: 25px;
+    border: 2px solid rgb(192,192,192);
+}
+
+.btn {
+    width: 50%;
+    }
+
+h5 {
+    color: rgb(128,0,128);
+    text-align: center;
+    text-decoration: wavy;
+    border: 2%;
+    margin: 2%;
+    font-size: 3em;
+}
+.heading {
+    /* background: linear-gradient(to right, #99ff66 0%, #33ccff 100%);  */
+    background: rgb(192,192,192);
+    width: 100%;
+    height: 20%;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.footer {
+    background: rgb(192,192,192);
+    width: 100%;
+    height: 5%;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+}
+h6 {
+    color: rgb(128,0,128);
+}
+
+#book_name{
+    width: 150%;
+}
+
+#book_id{
+    width: 150%;
+}
+
+#auth_name{
+    width: 150%;
+}
+
+#auth_email{
+    width: 150%;
+}
+
+#delauthname{
+    margin-left: 0%;
+    width: 150%;
+}
+#retbksauthname{
+    margin-left: 0%;
+    width: 150%;
+}
+
+#retbkname {
+    margin-left: 0%;
+    width: 150%;
+}
+
+.left1 {
+    margin-left: 5%;
+}
+
+.left2{
+    margin-left: 0%;
+}
+
+#retbksauthresult{
+    margin-bottom: 2%;
+}
+
+#retbkinforesult{
+    margin-bottom: 2%;
+}
+
+#name-error{
+    margin-top: 10%;
+}
+
+#id-error {
+    margin-top: 10%;
+}
+
+#authname-error{
+    margin-top: 10%;
+}
+
+#authemail-error {
+    margin-top: 10%;
+}

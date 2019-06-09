@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Book Inventory</title>
+  <!-- Bootstrap core CSS -->
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="styles/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/BookInventory.css" rel="stylesheet">
+</head>
+<body>
+    <div class="heading z-depth-3"><h5>Book Inventory</h5></div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item"><a class = "nav-link active" href="#addBook" data-toggle="pill" role="tab">Add Book</a></li>
+            <li class = "nav-item"><a class = "nav-link" href="#deleteAuthInfo" data-toggle="pill" role="tab">Delete Author Information</a></li>
+            <li class = "nav-item"><a class = "nav-link" href="#retrieveAuthorBooks" data-toggle="pill" role="tab">Retrieve books of an Author</a></li>
+            <li class = "nav-item"><a class = "nav-link" href="#retrieveBookInfo" data-toggle="pill" role="tab">Retrieve book Info</a></li>
+    </ul> 
+    <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+    <div id="addBook" class="tab-pane fade show active"> 
+            <div class="grid-container hoverable">
+                    <div class="md-form">
+                      <input type="text" name="name" class="form-control" id="book_name" required>
+                      <label for="name">Enter the book name</label>
+                    </div>
+                    <p id="name-error"></p>
+                    <div class="md-form">
+                      <input type="text" name="id" class="form-control" id="book_id" required>
+                      <label for="id">Enter the book id</label>
+                    </div>
+                    <p id="id-error"></p>
+                    <div class="md-form">
+                        <input type="text" name="authName" class="form-control" id="auth_name" required>
+                        <label for="authName">Enter the author name</label>
+                      </div>
+                    <p id="authname-error"></p>
+                    <div class="md-form">
+                        <input type="text" name="authEmail" class="form-control" id="auth_email" required>
+                        <label for="authEmail">Enter the author's email</label>
+                    </div>
+                    <p id="authemail-error"></p>
+                    <button type="button" class="btn btn-unique" id = "saveBook">Go</button>
+                    <br>
+                    <p id="result"></p>
+                    </div>    
+    </div>
+    <div id="deleteAuthInfo" class="tab-pane fade"> 
+            <div class="del-container hoverable">
+                    <div class="md-form">
+                      <input type="text" name="name" class="form-control" id="delauthname" required>
+                      <label for="name">Enter the Author name</label>
+                    </div>
+                    <button type="button" class="btn btn-unique" id = "delAuth">Go</button>
+                    <br>
+                    <p id="delresult"></p>
+            </div>    
+    </div>
+    <div id="retrieveAuthorBooks" class="tab-pane fade"> 
+            <div class="retauthbks-container hoverable">
+                    <div class="md-form">
+                      <input type="text" name="name" class="form-control" id="retbksauthname" required>
+                      <label for="name">Enter the Author name</label>
+                    </div>
+                    <button type="button" class="btn btn-unique" id = "retbksAuth">Go</button>
+                    <br>
+                    <div id="retbksauthresult"></div>
+            </div>    
+    </div>
+    <div id="retrieveBookInfo" class="tab-pane fade"> 
+            <div class="retbkinfo-container hoverable">
+                    <div class="md-form">
+                      <input type="text" name="name" class="form-control" id="retbkname" required>
+                      <label for="name">Enter the book name</label>
+                    </div>
+                    <button type="button" class="btn btn-unique" id= "retbkinfo">Go</button>
+                    <br>
+                    <div id="retbkinforesult"></div>
+            </div>
+    </div>
+    </div>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/BookInventory.js"></script>
+</body>
+<div class="footer"><h6>&copy; 2019 Book Inventory</h6></div>
+</html>
